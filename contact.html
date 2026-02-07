@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStock Pro - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1> TechStock Pro - Contact</h1>
+            <p class="subline">Get in Touch with Our Team</p>
+        </header>
+        
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" class="navigationlink">Home</a>
+            <a href="inventory.html" class="navigationlink">Inventory</a>
+            <a href="reports.html" class="navigationlink">Reports</a>
+            <a href="contact.html" class="navigationlink active">Contact</a>
+            <a href="https://github.com" class="navigationlink externallink" target="_blank">GitHub</a>
+        </nav>
+        
+        <!-- Main Content -->
+        <main>
+            <h2 class="noborder2">Contact Our Support Team</h2>
+            
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3 class="noborder">📧 Email Support</h3>
+                    <p>support@techstockpro.com</p>
+                    <p>Response time: 24 hours</p>
+                </div>
+                <div class="contact-card">
+                    <h3 class="noborder">📞 Phone Support</h3>
+                    <p>+233 24 654 0934</p>
+                    <p>Mon-Fri: 9AM-6PM GMT</p>
+                </div>
+                <div class="contact-card">
+                    <h3 class="noborder">🏢 Office Address</h3>
+                    <p>University of Cape Coast</p>
+                    <p>Cape Coast, Ghana</p>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <h3>Send Us a Message</h3>
+            <form class="contact-form">
+                <!-- Text Fields -->
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="companyName">Company Name:</label>
+                    <input type="text" id="companyName" name="companyName" placeholder="Your company (optional)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="contactEmail">Email Address:</label>
+                    <input type="email" id="contactEmail" name="contactEmail" placeholder="you@example.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="text" id="phoneNumber" name="phoneNumber" placeholder="(123) 456-7890">
+                </div>
+                
+                <!-- Radio Buttons -->
+                <div class="form-group">
+                    <label>Inquiry Type:</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="inquiryType" value="technical" checked>
+                            Technical Support
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="inquiryType" value="sales">
+                            Sales Inquiry
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="inquiryType" value="billing">
+                            Billing Question
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="inquiryType" value="general">
+                            General Question
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Checkboxes -->
+                <div class="form-group">
+                    <label>Products of Interest:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="products[]" value="inventory">
+                            Inventory Management
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="products[]" value="reporting">
+                            Advanced Reporting
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="products[]" value="analytics">
+                            Sales Analytics
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="products[]" value="mobile">
+                            Mobile App Access
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="contactMethods[]" value="email" checked>
+                            Email
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="contactMethods[]" value="phone">
+                            Phone Call
+                        </label>
+                        <label class="checkbox-option">
+                            <input type="checkbox" name="contactMethods[]" value="text">
+                            Text Message
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Text Area -->
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Please describe your inquiry in detail..." required></textarea>
+                </div>
+                
+                <!-- File Upload (extra text field type) -->
+                <div class="form-group">
+                    <label for="attachment">Attach File (optional):</label>
+                    <input type="text" id="attachment" name="attachment" placeholder="File name or description">
+                    <small>Upload files up to 1GB!</small>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn submit-btn">Send Message</button>
+                    <button type="reset" class="btn reset-btn">Clear Form</button>
+                </div>
+            </form>
+            
+            <!-- Relative Link -->
+            <div class="relative-link-container">
+                <p><a href="privacy.html" class="relative-link">📄 View our Privacy Policy</a></p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 TechStock Pro. All rights reserved.</p>
+            <p>Page 4 of 4: Contact Page</p>
+            <small>PS/ITC/24/0178 | PS/ITC/24/0185 | PS/ITC/24/0194 | PS/ITC/24/0294 | PS/ITC/24/0410 | PS/ITC/24/0237 | PS/ITC/24/0058 | PS/ITC/24/0043 | PS/ITC/24/0217 | PS/ITC/24/0037</small>
+        </footer>
+    </div>
+</body>
+</html>

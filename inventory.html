@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStock Pro - Inventory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1> TechStock Pro - Inventory</h1>
+            <p class="subline">Manage Computer Accessories Stock</p>
+        </header>
+        
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" class="navigationlink">Home</a>
+            <a href="inventory.html" class="navigationlink active">Inventory</a>
+            <a href="reports.html" class="navigationlink">Reports</a>
+            <a href="contact.html" class="navigationlink">Contact</a>
+            <a href="https://github.com" class="navigationlink externallink" target="_blank">GitHub</a>
+        </nav>
+        
+        <!-- Main Content -->
+        <main>
+            <h2>Computer Accessories Inventory</h2>
+            
+            <!-- Image with Box Model & Positioning -->
+            <div class="positioned-container">
+                <div class="positioned-image">
+                    <img src='OIP.webp'>
+                </div>
+                    <pre>                                          <pre>
+            </div>
+            
+            <!-- Table with INVISIBLE borders for layout -->
+            <div class="table-layout">
+                <h3>Inventory Categories</h3>
+                <table class="invisible-table">
+                    <tr>
+                        <td class="category-cell">
+                            <h4 class="noborder3">🖱️ Mice & Pointing Devices</h4>
+                            <p>Wireless mice, gaming mice, trackballs</p>
+                        </td>
+                        <td class="category-cell">
+                            <h4 class="noborder3">⌨️ Keyboards</h4>
+                            <p>Mechanical, membrane, wireless keyboards</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="category-cell">
+                            <h4 class="noborder3">🎧 Audio Devices</h4>
+                            <p>Headsets, speakers, microphones</p>
+                        </td>
+                        <td class="category-cell">
+                            <h4 class="noborder3">🖥️ Monitors & Displays</h4>
+                            <p>LCD monitors, mounting arms, screen protectors</p>
+                        </td>
+                    </tr>
+                </table>
+                <p class="table-note">TECKSTOP-PRO 2026 &copy</p>
+            </div>
+            
+            <!-- Table with VISIBLE borders for data -->
+            <h3>Current Stock Levels</h3>
+            <table class="visible-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Category</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KB-MECH-001</td>
+                        <td>Mechanical Keyboard RGB</td>
+                        <td>Keyboards</td>
+                        <td>45</td>
+                        <td>₵1290.00</td>
+                        <td class="status-instock">In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>MS-WRL-002</td>
+                        <td>Wireless Gaming Mouse</td>
+                        <td>Mice</td>
+                        <td>82</td>
+                        <td>₵590.00</td>
+                        <td class="status-instock">In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>MN-4K-003</td>
+                        <td>27" 4K Monitor</td>
+                        <td>Monitors</td>
+                        <td>12</td>
+                        <td>₵4490.00</td>
+                        <td class="status-low">Low Stock</td>
+                    </tr>
+                    <tr>
+                        <td>HS-GAM-004</td>
+                        <td>Gaming Headset 7.1</td>
+                        <td>Audio</td>
+                        <td>28</td>
+                        <td>₵890.00</td>
+                        <td class="status-instock">In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>CB-HDMI-005</td>
+                        <td>HDMI Cable 6ft</td>
+                        <td>Cables</td>
+                        <td>156</td>
+                        <td>₵120.00</td>
+                        <td class="status-instock">In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>AD-USB-006</td>
+                        <td>USB-C Hub 7-in-1</td>
+                        <td>Adapters</td>
+                        <td>8</td>
+                        <td>₵340.00</td>
+                        <td class="status-critical">Critical</td>
+                    </tr>
+                    <!-- Add these rows to your existing table body -->
+<tr>
+    <td>WB-ERG-007</td>
+    <td>Ergonomic Wrist Rest</td>
+    <td>Accessories</td>
+    <td>67</td>
+    <td>₵250.00</td>
+    <td class="status-instock">In Stock</td>
+</tr>
+<tr>
+    <td>PW-BCK-008</td>
+    <td>Backup Power Bank 20000mAh</td>
+    <td>Power</td>
+    <td>23</td>
+    <td>₵450.00</td>
+    <td class="status-instock">In Stock</td>
+</tr>
+<tr>
+    <td>ST-EXT-009</td>
+    <td>2TB External SSD Drive</td>
+    <td>Storage</td>
+    <td>15</td>
+    <td>₵1250.00</td>
+    <td class="status-low">Low Stock</td>
+</tr>
+<tr>
+    <td>WK-BLU-010</td>
+    <td>Bluetooth Wireless Keyboard</td>
+    <td>Keyboards</td>
+    <td>34</td>
+    <td>₵850.00</td>
+    <td class="status-instock">In Stock</td>
+</tr>
+<tr>
+    <td>WC-USB-011</td>
+    <td>USB Webcam 1080p</td>
+    <td>Webcams</td>
+    <td>9</td>
+    <td>₵690.00</td>
+    <td class="status-critical">Critical</td>
+</tr>
+<tr>
+    <td>SP-BLU-012</td>
+    <td>Bluetooth Speaker Portable</td>
+    <td>Audio</td>
+    <td>42</td>
+    <td>₵380.00</td>
+    <td class="status-instock">In Stock</td>
+</tr>
+<tr>
+    <td>DP-DOC-013</td>
+    <td>Laptop Docking Station Dual HDMI</td>
+    <td>Docks</td>
+    <td>18</td>
+    <td>₵1290.00</td>
+    <td class="status-instock">In Stock</td>
+</tr>
+<tr>
+    <td>LG-GAM-014</td>
+    <td>RGB Gaming Mouse Pad XL</td>
+    <td>Accessories</td>
+    <td>56</td>
+    <td>₵190.00</td>
+    <td class="status-instock">In Stock</td>
+</tr>
+<tr>
+    <td>SW-WIN-015</td>
+    <td>Windows 11 Pro License Key</td>
+    <td>Software</td>
+    <td>89</td>
+    <td>₵2450.00</td>
+    <td class="status-instock">In Stock</td>
+</tr>
+<tr>
+    <td>CA-ETH-016</td>
+    <td>Ethernet Cable Cat6 10ft</td>
+    <td>Cables</td>
+    <td>124</td>
+    <td>₵95.00</td>
+    <td class="status-instock">In Stock</td>
+</tr>
+                </tbody>
+            </table>
+            <p class="table-note">Check out our Available products. </p>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 TechStock Pro. All rights reserved.</p>
+            <p>Page 2 of 4: Inventory Page</p>
+            <small>PS/ITC/24/0178 | PS/ITC/24/0185 | PS/ITC/24/0194 | PS/ITC/24/0294 | PS/ITC/24/0410 | PS/ITC/24/0237 | PS/ITC/24/0058 | PS/ITC/24/0043 | PS/ITC/24/0217 | PS/ITC/24/0037</small>
+        </footer>
+    </div>
+</body>
+</html>

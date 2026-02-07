@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStock Pro - Reports</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1> TechStock Pro - Reports</h1>
+            <p class="subline">Generate Inventory & Sales Reports</p>
+        </header>
+        
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html" class="navigationlink">Home</a>
+            <a href="inventory.html" class="navigationlink">Inventory</a>
+            <a href="reports.html" class="navigationlink active">Reports</a>
+            <a href="contact.html" class="navigationlink">Contact</a>
+            <a href="https://github.com" class="navigationlink externallink" target="_blank">GitHub</a>
+        </nav>
+        
+        <!-- Main Content -->
+        <main>
+            <h2>Generate Custom Reports</h2>
+            <p>Report directly to our team..</p>
+            
+            <!-- Report Form -->
+            <form class="report-form">
+                <fieldset>
+                    <legend>Report Configuration</legend>
+                    
+                    <!-- Text Fields -->
+                    <div class="form-group">
+                        <label for="reportName">Report Name:</label>
+                        <input type="text" id="reportName" name="reportName" placeholder="Enter report name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="reportEmail">Email for Report:</label>
+                        <input type="email" id="reportEmail" name="reportEmail" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dateFrom">Date Range:</label>
+                        <div class="date-inputs">
+                            <input type="text" id="dateFrom" placeholder="From (MM/DD/YYYY)" class="date-field">
+                            <span>to</span>
+                            <input type="text" id="dateTo" placeholder="To (MM/DD/YYYY)" class="date-field">
+                        </div>
+                    </div>
+                    
+                    <!-- Radio Buttons -->
+                    <div class="form-group">
+                        <label>Report Type:</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="reportType" value="inventory" checked>
+                                Inventory Report
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="reportType" value="sales">
+                                Sales Report
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="reportType" value="profit">
+                                Profit Analysis
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Format:</label>
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="format" value="pdf" checked>
+                                PDF Document
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="format" value="excel">
+                                Excel Spreadsheet
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="format" value="html">
+                                Web Page (HTML)
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Checkboxes -->
+                    <div class="form-group">
+                        <label>Include Sections:</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="sections[]" value="summary" checked>
+                                Executive Summary
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="sections[]" value="charts" checked>
+                                Charts & Graphs
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="sections[]" value="details">
+                                Detailed Data
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="sections[]" value="recommendations">
+                                Recommendations
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Data Filters:</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="filters[]" value="lowstock">
+                                Show Only Low Stock Items
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="filters[]" value="bestsellers">
+                                Include Best Sellers
+                            </label>
+                            <label class="checkbox-option">
+                                <input type="checkbox" name="filters[]" value="newproducts">
+                                Include New Products
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Text Field -->
+                    <div class="form-group">
+                        <label for="notes">Additional Notes:</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Any special requirements for this report..."></textarea>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn generate-btn">Generate Report</button>
+                        <button type="reset" class="btn reset-btn">Clear Form</button>
+                    </div>
+                </fieldset>
+            </form>
+            
+            <!-- Sample Reports -->
+            <section class="sample-reports">
+                <h3>Sample Reports Available</h3>
+                <div class="report-cards">
+                    <div class="report-card">
+                        <h4 class="noborder3">Monthly Sales Summary</h4>
+                        <p>Top selling computer accessories by category</p>
+                    </div>
+                    <div class="report-card">
+                        <h4 class="noborder3">Inventory Health Check</h4>
+                        <p>Stock levels and reorder recommendations</p>
+                    </div>
+                    <div class="report-card">
+                        <h4 class="noborder3">Supplier Performance</h4>
+                        <p>Delivery times and product quality ratings</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 TechStock Pro. All rights reserved.</p>
+            <p>Page 3 of 4: Reports Page</p>
+            <small>PS/ITC/24/0178 | PS/ITC/24/0185 | PS/ITC/24/0194 | PS/ITC/24/0294 | PS/ITC/24/0410 | PS/ITC/24/0237 | PS/ITC/24/0058 | PS/ITC/24/0043 | PS/ITC/24/0217 | PS/ITC/24/0037</small>
+        </footer>
+    </div>
+</body>
+</html>
